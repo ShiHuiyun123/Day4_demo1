@@ -21,6 +21,7 @@ import java.util.List;
 
 public class MainActivity extends ActionBarActivity {
     //yyyyyyyyyyyyyyyyyyyyyyyy
+    //xxxxxxxxxxxxxxxxxxxxxI
     private ArrayAdapter<String> adapter;
     private PullToRefreshListView lv;
     private Handler handler=new Handler(){
@@ -36,6 +37,7 @@ public class MainActivity extends ActionBarActivity {
                         list1.add("你好"+i);
                     }
                     adapter.addAll(list1);
+
                     //调用刷新完成
                      lv.onRefreshComplete();
                      break;
